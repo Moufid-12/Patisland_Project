@@ -16826,6 +16826,15 @@ button.owl-next {
   padding-top: 40px;
 }
 
+.w3l-content-4 .content-4-bottom.mfid{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 05px;
+  border-top: 1px solid #ddd;
+  margin-top: 40px;
+  padding-top: 40px;
+}
+
 .w3l-content-4 .content4-right-info {
   padding-left: 0;
 }
