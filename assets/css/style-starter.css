@@ -179,7 +179,7 @@ a {
 }
 
 a:hover {
-  color: #ff4d00;
+  color: #7f4f25;
   text-decoration: underline;
 }
 
@@ -4992,8 +4992,8 @@ input[type="button"].btn-block {
 }
 
 .navbar-expand-lg a.nav-link.donate.btn.btn-style:hover {
-  background-color: #ff4d00;
-  border-color: #ff4d00;
+  background-color: #7f4f25;
+  border-color: #7f4f25;
   color: #fff;
 }
 
@@ -14206,8 +14206,8 @@ body p {
 }
 
 .btn-style:hover {
-  background-color: #ff4d00;
-  border-color: #ff4d00;
+  background-color: #7f4f25;
+  border-color: #7f4f25;
   color: #fff;
 
 }
@@ -14520,14 +14520,14 @@ nav ul li a:hover {
 }
 
 .nav-fixed .navbar-expand-lg a.nav-link.donate.btn.btn-style {
-  background-color: #ff4d00;
-  border-color: #ff4d00;
+  background-color: #7f4f25;
+  border-color: #7f4f25;
   color: #fff;
 }
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-  color: #ff4d00;
+  color: #7f4f25;
   text-decoration: none;
   background-color: transparent;
 }
@@ -16067,7 +16067,7 @@ button.owl-next {
 .w3l-specification-6 .stats_left p {
   font-size: 50px;
   font-weight: 700;
-  color: #ff4d00;
+  color: #7f4f25;
 }
 
 .w3l-specification-6 .stats_left h4 {
@@ -16486,7 +16486,7 @@ button.owl-next {
 
 .w3-services-grids .progress-box .progress-bar {
   position: relative;
-  background-color: #ff4d00;
+  background-color: #7f4f25;
   box-shadow: none;
   -webkit-transition: all 3s ease 0s;
   -moz-transition: all 3s ease 0s;
@@ -16501,10 +16501,10 @@ button.owl-next {
   text-align: center;
   bottom: 15px;
   right: -29px;
-  color: #ff4d00;
+  color: #7f4f25;
   line-height: 18px;
   font-weight: 700;
-  border: 2px solid #ff4d00;
+  border: 2px solid #7f4f25;
   border-radius: 0px;
   font-size: 12px;
   padding: 3px 4px 2px 4px;
@@ -16519,8 +16519,8 @@ button.owl-next {
   left: 50%;
   margin-left: -3px;
   bottom: -5px;
-  border-bottom: 2px solid #ff4d00;
-  border-right: 2px solid #ff4d00;
+  border-bottom: 2px solid #7f4f25;
+  border-right: 2px solid #7f4f25;
   transform: rotate(45deg);
 }
 
@@ -16808,7 +16808,7 @@ button.owl-next {
 }
 
 .w3l-content-4 .content-info-in h6 a:hover {
-  color: #ff4d00;
+  color: #7f4f25;
 }
 
 .w3l-content-4 .content4-icon {
@@ -16845,7 +16845,7 @@ button.owl-next {
 }
 
 .w3l-content-4 .content4-icon:hover span.fa {
-  color: #ff4d00;
+  color: #7f4f25;
   transition: 0.3s ease;
 }
 
@@ -16896,7 +16896,7 @@ button.owl-next {
 
 .w3l-team-main .team-grids h6 {
   font-size: 14px;
-  color: #ff4d00;
+  color: #7f4f25;
   opacity: 0.9;
 }
 
@@ -17033,7 +17033,7 @@ button.owl-next {
   font-size: 18px;
   margin-top: 1rem;
   margin-bottom: 3rem;
-  color: #ff4d00;
+  color: #7f4f25;
   font-style: italic;
 }
 
@@ -17397,8 +17397,8 @@ button.owl-next {
 }
 
 .w3l-login button.btn:hover {
-  background-color: #ff4d00;
-  border-color: #ff4d00;
+  background-color: #7f4f25;
+  border-color: #7f4f25;
   color: #fff;
 }
 
@@ -17748,8 +17748,8 @@ button.owl-next {
 }
 
 .w3l-footer-66 .footer-newsletter button.btn:hover {
-  background-color: #ff4d00;
-  border-color: #ff4d00;
+  background-color: #7f4f25;
+  border-color: #7f4f25;
   color: #fff;
 }
 
