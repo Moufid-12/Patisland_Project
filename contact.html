@@ -1,9 +1,8 @@
 <!--
-Author: W3layouts
-Author URL: http://w3layouts.com
+Dev: Moufid DAOUDA/ 96911842
 -->
 <!doctype html>
-<html lang="zxx">
+<html lang="fr">
 
 
 	<head>
@@ -96,20 +95,20 @@ Author URL: http://w3layouts.com
 					<div class="title-content text-left">
 						<h3 class="hny-title mb-lg-5 mb-4">Envoie-nous un message</h3>
 					</div>
-				  <form action="https://sendmail.w3layouts.com/submitForm" method="post" class="signin-form">
+				  <form action="" method="post" class="signin-form" id="contactForm">
 					<div class="form-input">
-					  <input type="text" name="w3lName" id="w3lName" placeholder="Nom complet" />
+					  <input type="text" name="name" id="name" placeholder="Nom complet" />
 					</div>
 					<div class="row con-two">
 					<div class="col-lg-6 form-input">
-					  <input type="email" name="w3lSender" id="w3lSender" placeholder="Adresse e-mail" required="" />
+					  <input type="email" id="email" name="email" placeholder="Adresse e-mail" required="" />
 					</div>
 					<div class="col-lg-6 form-input">
-						<input type="text" name="w3lSubect" placeholder="Objet" class="contact-input" />
+						<input type="text" id="subject" name="subject" placeholder="Objet" class="contact-input" />
 					</div>
 					</div>
 					<div class="form-input">
-					  <textarea placeholder="Message" name="w3lMessage" id="w3lMessage" required=""></textarea>
+					  <textarea placeholder="Message" id="message" name="message" required=""></textarea>
 					</div>
 					<div class="submit-button text-lg-right">
 					   <button type="submit" class="btn btn-style">Envoyer</button>
@@ -119,6 +118,36 @@ Author URL: http://w3layouts.com
 			  </div>
 			</div>
 		  </div>
+		   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		   <!-- <script>
+			 $(document).ready(function() {
+        $("#contactForm").submit(function(event) {
+            event.preventDefault(); // Empêche le rechargement de la page
+
+            // Récupérer les données du formulaire
+            var formData = {
+                name: $("#name").val(),
+                email: $("#email").val(),
+                subject: $("#subject").val(),
+                message: $("#message").val()
+            };
+
+			console.log(formData);
+            // Envoyer les données au serveur via AJAX
+            $.ajax({
+                type: "POST",
+                url: "url_de_traitement.php", // Remplacez par l'URL de votre script de traitement
+                data: formData,
+                success: function(response) {
+                    alert("Message envoyé avec succès !");
+                },
+                error: function(error) {
+                    alert("Une erreur est survenue. Veuillez réessayer.");
+                }
+            });
+        });
+    });
+		   </script> -->
 		  <div class="map">
 			<iframe
 			  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001161.424489281!2d-78.01909140705047!3d42.72866436845163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sin!4v1570786994395!5m2!1sen!2sin"
