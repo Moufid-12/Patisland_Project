@@ -50,7 +50,7 @@ Dev: Moufid DAOUDA/ 96911842
 					</li>
 					
 					<li class="nav-item active">
-						<a class="nav-link" href="contact.html">Contact</a>
+						<a class="nav-link" href="contact.php">Contact</a>
 					</li>
 					<li class="nav-item ml-lg-4">
 						<a class="nav-link donate btn btn-style" href="donate.html">Notre localisation</a>
@@ -65,6 +65,58 @@ Dev: Moufid DAOUDA/ 96911842
 </div>
 	<!-- /contact-form -->
 	<section class="w3l-contact-11">
+	<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $name = isset($_POST['name']) ? $_POST['name'] : "";
+    $email = isset($_POST['email']) ? $_POST['email'] : "";
+    $tel = isset($_POST['tel']) ? $_POST['tel'] : "";
+    $subject = isset($_POST['subject']) ? $_POST['subject'] : "";
+    $message = isset($_POST['message']) ? $_POST['message'] : "";
+
+    $from =  $email;
+
+    // Créer le contenu de l'e-mail
+    $content = "Nom : $name\n";
+    $content = "Email : $email\n";
+    $content = "Téléphone : $tel\n";
+    $content .= "Message : $message\n";
+
+    // Adresse e-mail destinataire
+    $destinataire = "mfiddaoud771@gmail.com";
+    $sujet = $subject ;
+
+    // Envoyer l'e-mail
+    if (mail($destinataire, $sujet, $content)) {
+        echo '<p class="flash-message success">Requête enoyé avec succès</p>';
+    } else {
+        echo '<p class="flash-message error">Réessayer.</p>';
+    }
+} else {
+}
+?>
+
+<style>
+	.flash-message {
+    padding: 10px;
+    border: 1px solid;
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+
+.error {
+    background-color: #d8afac;
+    color: #571515;
+    border-color: #e6c3c3;
+}
+</style>
 		<div class="form-41-mian py-5">
 			<div class="container py-lg-4">
 			  <div class="row align-form-map">
@@ -84,7 +136,7 @@ Dev: Moufid DAOUDA/ 96911842
 						<p> <a href="mailto:info@example.com">
 							contact@patisland.com</a></p>
 						<h6 class="mt-4">Address:</h6>
-						<p> Carré 438 BP Sikècodji Cotonou Bénin</p>
+						<p> Carré 435 01BP8350 Sikècodji Cotonou Bénin</p>
 						<h6 class="mt-4">Contact:</h6>
 						<p class="margin-top"><a href="tel:+(21) 255 999 8899">+(229)
 							63 16 27 27</a></p>
@@ -95,13 +147,16 @@ Dev: Moufid DAOUDA/ 96911842
 					<div class="title-content text-left">
 						<h3 class="hny-title mb-lg-5 mb-4">Envoie-nous un message</h3>
 					</div>
-				  <form action="" method="post" class="signin-form" id="contactForm">
+				  <form action="url_de_traitement.php" method="POST" class="signin-form" id="contactForm">
 					<div class="form-input">
 					  <input type="text" name="name" id="name" placeholder="Nom complet" />
 					</div>
 					<div class="row con-two">
 					<div class="col-lg-6 form-input">
 					  <input type="email" id="email" name="email" placeholder="Adresse e-mail" required="" />
+					</div>
+					<div class="form-input">
+					  <input type="tel" name="tel" id="name" placeholder="Numéro téléphone" />
 					</div>
 					<div class="col-lg-6 form-input">
 						<input type="text" id="subject" name="subject" placeholder="Objet" class="contact-input" />
