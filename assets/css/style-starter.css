@@ -4838,6 +4838,15 @@ input[type="button"].btn-block {
   }
 }
 
+marquee {
+				
+  width: 100%;
+  padding: 10px 0;
+  backdrop-filter: blur(10px);
+  color: rgb(3, 3, 3);
+  font-size: 16px;
+}
+
 @media (min-width: 1200px) {
   .navbar-expand-xl {
     flex-flow: row nowrap;

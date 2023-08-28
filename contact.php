@@ -58,6 +58,8 @@ Dev: Moufid DAOUDA/ 96911842
 				</ul>
 			</div>
 		</nav>
+		<marquee behavior="" direction="" >Pour toute demande de prix ou de livraison veuillez nous envoyer un message en précisant vos contacts <span><a href="contact.php" >(Contacter Nous)</a></span> , nous repondrons dans les brefs delais.</marquee>			
+
     </div>
 </header>
 <!--/header-->
