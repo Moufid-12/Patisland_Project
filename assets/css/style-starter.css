@@ -4838,6 +4838,17 @@ input[type="button"].btn-block {
   }
 }
 
+.form-41-mian .submit-button input[type="submit"] {
+  display: block;
+padding: 6px 30px;
+font-size: 19px;
+justify-content: center;
+text-align: center;
+background-color: #fe0000;
+color: #fff;
+border: none
+  }
+
 marquee {
 				
   width: 100%;
