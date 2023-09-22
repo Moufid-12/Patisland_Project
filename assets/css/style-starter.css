@@ -4853,9 +4853,14 @@ marquee {
 				
   width: 100%;
   padding: 10px 0;
-  backdrop-filter: blur(10px);
-  color: rgb(3, 3, 3);
+  background-color: #d9544f;
+  /* backdrop-filter: blur(10px); */
+  color: #fff;
   font-size: 16px;
+}
+
+marquee span a{
+  color: black;
 }
 
 @media (min-width: 1200px) {
